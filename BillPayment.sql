@@ -1,5 +1,5 @@
 create table BillPayment(
-	PaymentID int(8) foreign key references Payment(PaymentID),
-	BillID int(8) foreign key references Bill(BillID),
-	Amount money
+	FOREIGN KEY PaymentID REFERENCES Payment(PaymentID),
+	FOREIGN KEY BillID REFERENCES Bill(BillID),
+	Amount MONEY
 	);
