@@ -1,8 +1,8 @@
 create table Appointment(
 	FOREIGN KEY (DoctorID) REFERENCES Doctor(DoctorID),
 	FOREIGN KEY (PatientID) REFERENCES Patient(PatientID),
-	Day date,
+	AppointmentDate DATE NOT NULL,
 	IsScheduled boolean,
-	PRIMARY KEY (DoctorID, PatientID, Day)
+	PRIMARY KEY (DoctorID, PatientID, AppointmentDate)
 	);
 	 
